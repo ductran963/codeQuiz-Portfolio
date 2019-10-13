@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width = device=width, initial-scale = 1.0'>
+    <link rel='stylesheet' type='text/css' href='./assets/css/style.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <div id="high-scores">View Highscores</div>
+    <div id='time'>Time:</div>
+    <div class='container'>
+        <div id='endScreen' class='hide'>
+            <h1 id='allDone'>
+                <bold>All Done!</bold>
+            </h1>
+            <p>Your final score is: </p>
+            <p>Enter initials: </p>
+            <textarea id='textarea' rows="1" cols="15"></textarea>
+            <input type="submit" id='submit' value='Submit'>
+        </div>
+
+        <div id='highScore' class= 'hide'>
+            <h1><bold>Highscores</bold></h1>
+            
+            <p id='user-score'>1</p>
+            <button id='tryAgainBtn'>Try Again</button>
+        </div>
+        <div id='question-container' class='hide'>
+            <div id='question'>Question</div>
+            <div id='answer-buttons' class='button-grid'>
+                <button class='btn'>Answer 1</button>
+                <button class='btn'>Answer 2</button>
+                <button class='btn'>Answer 3</button>
+                <button class='btn'>Answer 4</button>
+            </div>
+            <hr id='lineBreak'/>
+
+
+        </div>
+        <div class='control'>
+                <h1 id='title'>
+                    <bold>Coding Quiz Challenge</bold>
+                </h1>
+                <br />
+                <p id='description'>Welcome to the website. There will be 5 questions for this quiz challenge. You will be timed
+                    the moment you hit the Start Quiz button. You get 15 seconds for each question, if you answer the questions
+                    quickly and correctly you will get higher score, answer it incorrectly and you will get a time penalty. Feel
+                    free to post your highscore after you finish with your initial to compare how well you did against other
+                    players. Good Luck and have fun!
+                </p>
+                <button id='start-btn' class='start-btn btn'>StartQuiz</button>
+        </div>
+
+    </div>
+    
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
